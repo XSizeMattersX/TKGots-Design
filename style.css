@@ -1,25 +1,19 @@
-/* Base layout */
 body {
+  display: flex;
   margin: 0;
   font-family: sans-serif;
   background-color: black;
   color: white;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-}
-
-/* Sidebar styling */
 .sidebar {
-  width: 25%;
-  min-width: 200px;
-  max-width: 300px;
-  background-color: #111;
-  padding: 1rem;
-  box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+  width: 220px;
+  background-color: #222;
+  padding: 1em;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .sidebar h2 {
@@ -33,7 +27,7 @@ body {
 }
 
 .sidebar li {
-  margin-bottom: 0.75rem;
+  margin: 1em 0;
 }
 
 .sidebar a {
@@ -46,29 +40,7 @@ body {
   text-decoration: underline;
 }
 
-/* Main content styling */
 .main-content {
-  flex: 1;
-  padding: 2rem;
+  margin-left: 240px;
+  padding: 2em;
 }
-
-/* Headings and links */
-h1, h2 {
-  color: #00ffff;
-}
-
-a {
-  color: #00ffff;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background-color: #222;
-  color: #ccc;
-  font-size: 0.9rem;
